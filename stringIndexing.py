@@ -12,3 +12,6 @@ print(f"Your Credit card number is XXXX-XXXX-XXXX-{last_four}")
 #number in reverse
 reverse_number = credit_number[::-1]
 print(f"Your credit card number in reverse is {reverse_number}")
+
+slicing = credit_number[:5]
+print(slicing)
