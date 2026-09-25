@@ -1,6 +1,10 @@
-princaple = float(input("Please input your princaple: "))
+principal = float(input("Please input your principal: "))
 rate = float(input("Please input the interest rate: "))
 peroids = float(input("Please input the number of full years of the investement: "))
+result = 0
+x = 1
+while x <= peroids:
+    principal = principal*rate
+    x += 1
 
-final = princaple*(1+rate/100)^peroids
-print(final)
+print(f"Your new budget is {principal}")
