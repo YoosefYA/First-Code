@@ -19,6 +19,6 @@ while True:
         principal = principal*rate
         x += 1
 
-    print(f"Your new budget is {principal}")
+    print(f"Your new budget is ${principal:,.2f}")
 
 print("Thank you for using this application!!")
