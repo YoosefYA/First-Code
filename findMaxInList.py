@@ -9,13 +9,6 @@ my_list = [1, 20, 213, 21, 354, 454, 3444, 1]
 max_value = find_max(my_list)
 print(f"The maximum value in the 1D is {max_value}")
 
-
-my_list = [[1,2,3],[4,5,6],[7,8,9]]
-for row in my_list:
-    for element in row:
-        print(element, end=" ")
-    print()
-
 def find_max_2D(my_list):
     max_value = my_list[0][0]
     for row in my_list:
@@ -24,5 +17,11 @@ def find_max_2D(my_list):
                 max_value = element
     return max_value
 
-max_value = find_max(my_list)
+my_list = [[1,2,31],[4,15,6],[17,8,2]]
+for row in my_list:
+    for element in row:
+        print(element, end=" ")
+    print()
+
+max_value = find_max_2D(my_list)
 print(f"The maximum value in the 2D is {max_value}")
