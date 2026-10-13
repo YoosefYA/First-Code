@@ -5,28 +5,33 @@ def deposit():
 
     global balance
     while True:
-        amount = str(input("Enter an amount to be deposited: "))
-        if amount.isdigit() is True:
-            amount = int(amount)
-            if amount >= 0:
-                    balance += int(amount)
-                    break
-        else:
+        try:
+            amount = float(input("Enter an amount to be deposited: "))
+            if amount > 0:
+                balance += amount
+                break
+            else:
+                print("Invalid Input")
+        except ValueError:
             print("Invalid Input")
 
+    return balance
 
 def withdraw():
 
     global balance
     while True:
-        amount = str(input("Enter an amount to be withdrawed: "))
-        if amount.isdigit() is True:
-            amount = int(amount)
-            if amount >= 0:
-                    balance -= int(amount)
-                    break
-        else:
+        try:
+            amount = float(input("Enter an amount to be withdrawed: "))
+            if amount > 0:
+                balance -= amount
+                break
+            else:
+                print("Invalid Input")
+        except ValueError:
             print("Invalid Input")
+
+    return balance
 
 balance = 0
 is_running = True
