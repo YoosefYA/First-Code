@@ -17,8 +17,11 @@ def main():
     while balance > 0:
         print(f"Current balance: ${balance}")
         try:
-            bet = int(input("Place your bet: "))
+            bet = float(input("Place your bet:  "))
         except ValueError:
             print("Invalid Input")
+
+        if bet > balance:
+            print("You cannot bet nire than you own")
 if __name__ == '__main__':
     main()
