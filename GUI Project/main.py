@@ -1,7 +1,10 @@
 import tkinter
 from tkinter import ttk
 from tkinter import messagebox
+import os
+import openpyxl
 
+print("---------------------------------------------------")
 def enter_data():
     accepted = accept_var.get()
 
@@ -21,12 +24,18 @@ def enter_data():
             numcourses = numcourses_spinbox.get()
             numsemesters = numsemesters_spinbox.get()
 
-            print("---------------------------------------------------")
+            
             print(f"First name: {firstname} Last name: {lastname}")
             print(f"Title: {title} Age: {age} Nationality: {nationality}")
             print(f"#Courses: {numcourses} #Semesters: {numsemesters}")
             print(f"Registeration status: {registeration_status}")
             print("---------------------------------------------------")
+
+            filepath = "C:\Users\yala9\OneDrive\Documents\GitHub\First-Code\GUI Project\data.xlsx"
+
+
+
+
         else:
             tkinter.messagebox.showwarning(title="Error", message="First name and Last name are required")
     else:
