@@ -16,7 +16,7 @@ except ValueError:
 
 #Task 3
 try:
-    with open("my_file.txt", "r") as file:
+    with open("C:/Users/yala9/OneDrive/Documents/GitHub/First-Code/Bro Code Tutorials/my_file.txt", "r") as file:
         contents = file.read()
         print(contents)
 except FileNotFoundError:
