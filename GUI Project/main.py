@@ -1,8 +1,6 @@
 import tkinter
 from tkinter import ttk
 from tkinter import messagebox
-import os
-import openpyxl
 
 print("---------------------------------------------------")
 def enter_data():
@@ -30,8 +28,6 @@ def enter_data():
             print(f"#Courses: {numcourses} #Semesters: {numsemesters}")
             print(f"Registeration status: {registeration_status}")
             print("---------------------------------------------------")
-
-            filepath = "C:\Users\yala9\OneDrive\Documents\GitHub\First-Code\GUI Project\data.xlsx"
 
 
 
@@ -127,7 +123,7 @@ courses_frame.grid(row=1, column=0, sticky="news", padx=20, pady=10)
 registered_label = tkinter.Label(courses_frame, text="Registeration Status")
 registered_label.grid(row=0, column=0)
 
-reg_status_var = tkinter.StringVar()
+reg_status_var = tkinter.StringVar(value="Not registered")
 registered_check = tkinter.Checkbutton(courses_frame, text="Currently Registered", 
                                        variable=reg_status_var, onvalue="Registered", offvalue="Not registered")
 registered_check.grid(row=1, column=0)
